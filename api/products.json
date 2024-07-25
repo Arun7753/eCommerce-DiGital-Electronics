@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Lava 5g",
+        "category": "Mobile",
+        "Price": 12999,
+        "MRP": 15999,
+        "stock": 12,
+        "image": "./Icon/Mobile.webp",
+        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+    },
+    {
+        "id": 2,
+        "name": "Lava 5g",
+        "category": "Mobile",
+        "Price": 12999,
+        "MRP": 15999,
+        "stock": 12,
+        "image": "./Icon/Mobile.webp",
+        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+    },
+    {
+        "id": 3,
+        "name": "Lava 5g",
+        "category": "Mobile",
+        "Price": 12999,
+        "MRP": 15999,
+        "stock": 12,
+        "image": "./Icon/Mobile.webp",
+        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+    },
+    {
+        "id": 4,
+        "name": "Some Television Model",
+        "category": "Television",
+        "Price": 24999,
+        "MRP": 29999,
+        "stock": 8,
+        "image": "./Icon/Television.png",
+        "description": "Details about the television"
+    },
+    {
+        "id": 5,
+        "name": "Some Television Model",
+        "category": "Kitchen-Appliances",
+        "Price": 24999,
+        "MRP": 29999,
+        "stock": 8,
+        "image": "./Icon/Television.png",
+        "description": "Details about the television"
+    },
+    {
+        "id": 6,
+        "name": "Some Television Model",
+        "category": "Air-Conditioners",
+        "Price": 24999,
+        "MRP": 29999,
+        "stock": 8,
+        "image": "./Icon/Television.png",
+        "description": "Details about the television"
+    }
+]

@@ -1,0 +1,167 @@
+ <template id="productTemp" class="flex shadow-xl mt-1 ml-2 mr-2">
+      <div class="bg-white rounded-md">
+        <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+          <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+            <img src="./Icon/Mobile.webp" alt="" class="object-scale-down h-20">
+          </div>
+
+          <div class="flex flex-col">
+
+            <h2 id="product-name" class="font-bold">Lava 12 5g</h2>
+
+            <div>
+
+            </div>
+            <div id="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            </div>
+
+            <p id="description">Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore
+              Processor|18W fast charging|6.5 inch 90Hz Punch Hole Display|50MP AI Dual Camera|Upto 16GB expandable RAM
+            </p>
+
+            <div class="flex gap-2 mt-2">
+              <p id="current-price"><span>&#8377;</span>1,299</p>
+              <p>MRP</p>
+              <p id="mrp" class="line-through"><span>&#8377;</span>1244</p>
+            </div>
+
+            <div class="flex gap-1 mt-2">
+              <p id="">Total available stock:</p>
+              <p id="quantity">25</p>
+            </div>
+
+            <div class="flex gap-2 mt-2">
+              <p>Quantity</p>
+              <div class="flex">
+                <button id="decrement" class="bg-gray-300 w-7 rounded-sm">-</button>
+                <p id="pieces">01</p>
+                <button id="increment" class="bg-gray-300 w-7 rounded-sm">+</button>
+              </div>
+            </div>
+
+            <button class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+              <p id="addtocart">Add To Cart</p>
+            </button>
+          </div>
+
+        </article>
+      </div>
+
+    </template>
+
+
+
+
+
+const productCategory = document.querySelector("#productCategory");
+const productTemp = document.querySelector("#productTemp");
+const productTele = document.querySelector("#productTempII");
+
+
+
+
+export const showproduct = (product) => {
+    if (!product) {
+        return false;
+    }
+
+    product.forEach((CardProd) => {
+        const { name, category, Price, stock, image, description, MRP } = CardProd;
+
+        const productClone = document.importNode(productTemp.content, true);
+        productClone.querySelector("#product-name").textContent = name;
+        productClone.querySelector("#product-IMG").src = image;
+        productClone.querySelector("#product-Price").textContent = `₹${Price}`;
+        productClone.querySelector("#product-MRP").textContent = `₹${MRP}`;
+        productClone.querySelector("#available-quantity").textContent = stock;
+        productClone.querySelector("#product-description").textContent = description;
+        productClone.querySelector("#product-description").textContent = description;
+
+
+        const productClone = document.importNode(productTempII.content, true);
+        productClone.querySelector("#product-name").textContent = name;
+       
+        productTemp.append(productClone);
+
+
+    });
+}; 
+
+
+Part2
+
+import { QuantityToggle } from "./QuantityToggle";
+
+const productTemp = document.querySelector("#productTemp");
+const productTempII = document.querySelector("#productTempII");
+const productTempIII = document.querySelector("#productTempIII");
+const productTempIV = document.querySelector("#productTempIV");
+
+
+export const showproduct = (products) => {
+    if (!products) {
+        console.log("No products found");
+        return false;
+    }
+
+    products.forEach((CardProd) => {
+        const {id, name, category, Price, stock, image, description, MRP } = CardProd;
+
+        const productClone = document.importNode(productTemp.content, true);
+
+
+        productClone.querySelector("#product-name").textContent = name;
+        productClone.querySelector("#product-IMG").src = image;
+        productClone.querySelector("#product-Price").textContent = `₹${Price}`;
+        productClone.querySelector("#product-MRP").textContent = `₹${MRP}`;
+        productClone.querySelector("#available-quantity").textContent = stock;
+        productClone.querySelector("#product-description").textContent = description;
+
+        productClone.querySelector("#MobileCard").setAttribute("id", `Mcard${id}`);
+
+
+        if (category === "Mobile") {
+            productTemp.append(productClone);
+
+            productClone.querySelector("#QuantityProduct").addEventListener('click', (e) => {
+                QuantityToggle(e, id, stock);
+            });
+
+        } else if (category === "Television") {
+            const productTeleClone = document.importNode(productTempII.content, true);
+            productTeleClone.querySelector("#product-name").textContent = name;
+            productTeleClone.querySelector("#product-IMG").src = image;
+            productTeleClone.querySelector("#product-Price").textContent = `₹${Price}`;
+            productTeleClone.querySelector("#product-MRP").textContent = `₹${MRP}`;
+            productTeleClone.querySelector("#available-quantity").textContent = stock;
+            productTeleClone.querySelector("#product-description").textContent = description;
+            productTempII.append(productTeleClone);
+        } else if (category === "Kitchen-Appliances") {
+            const productKitchenClone = document.importNode(productTempIII.content, true);
+            productKitchenClone.querySelector("#product-name").textContent = name;
+            productKitchenClone.querySelector("#product-IMG").src = image;
+            productKitchenClone.querySelector("#product-Price").textContent = `₹${Price}`;
+            productKitchenClone.querySelector("#product-MRP").textContent = `₹${MRP}`;
+            productKitchenClone.querySelector("#available-quantity").textContent = stock;
+            productKitchenClone.querySelector("#product-description").textContent = description;
+            productTempIII.append(productKitchenClone);
+        } else if (category === "Air-Conditioners") {
+            const productACClone = document.importNode(productTempIV.content, true);
+            productACClone.querySelector("#product-name").textContent = name;
+            productACClone.querySelector("#product-IMG").src = image;
+            productACClone.querySelector("#product-Price").textContent = `₹${Price}`;
+            productACClone.querySelector("#product-MRP").textContent = `₹${MRP}`;
+            productACClone.querySelector("#available-quantity").textContent = stock;
+            productACClone.querySelector("#product-description").textContent = description;
+            productTempIV.append(productACClone);
+        }
+
+    });
+};
+
+
+

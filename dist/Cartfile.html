@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <script type="module" crossorigin src="/assets/Cartfile-CPV1oF4U.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/products-DgEFlEh-.js">
+  <link rel="stylesheet" crossorigin href="/assets/products-Dk_i2w_z.css">
+</head>
+
+<body class="bg-zinc-200">
+    <div class="m-1 bg-emerald-950 rounded-sm pb-2">
+
+        <nav class=" flex items-center justify-between rounded-md">
+            <a href="" class="ml-2"><i class="fa-solid fa-bars" style="color: #fafafa;"></i></a>
+            <a href="index.html" class="mt-1">
+                <img src="/assets/logo-CFgw-GJD.png" alt="" class="w-32 ">
+            </a>
+            <div class="bg-black mr-1 w-14 flex justify-center items-center rounded-lg">
+                <a href="" class="mr-2 flex justify-center items-center gap-1">
+                    <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+                    <p id="value" class="text-cyan-50">0</p>
+                </a>
+            </div>
+        </nav>
+
+        <div class="flex mt-1 ml-2 mr-2 bg-white rounded-xl md:w-1/2 md:ml-64">
+            <input type="text" placeholder="Search for a product "
+                class="rounded-xl bg-transparent ml-3 outline-none w-full">
+            <a href="" class="mr-3"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+    </div>
+
+    <div class="bg-white rounded-md mt-2 p-2">
+        <h1 class="text-center">Your Cart</h1>
+    </div>
+
+
+    <section id="CartContainer">
+        <template id="ProductCart" class="mt-1">
+            <article id="cards" class="cardValue bg-white shadow-md flex items-center justify-between h-1/2 pb-3">
+                <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+                    <img src="" alt="" class="object-scale-down h-20" id="image">
+                </div>
+
+                <div class=" w-fit">
+                    <div class="w-52">
+                        <p id="name"></p>
+                        <h4>free delevery</h4>
+                    </div>
+
+                    <div class="">
+                        <p id="Price" class="font-bold"></p>
+                        <p class="underline underline-offset-8 text-sm">(Incl. all Taxes)</p>
+                        <p id="MRP" class="mt-1 line-through text-xs">MRP: </p>
+                    </div>
+
+                    <button id="removeButton" class="outline outline-offset-2 outline-2 rounded-lg mt-2">Remove</button>
+                </div>
+
+                <div class="flex gap-2 mt-2">
+                    <div id="QuantityProduct" class="flex shadow-md bg-white">
+                        <button id="decrement" class=" w-7 rounded-sm">-</button>
+                        <p id="Quantity" data-quantity = "1">1</p>
+                        <button id="increment" class=" w-7 rounded-sm">+</button>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+    </section>
+
+    <section class="bg-white mt-3 pb-3 shadow-md">
+        <div>
+            <p class="font-bold ml-3">Order Summary</p>
+        </div>
+        <div class="mt-3 flex items-center justify-between">
+            <p class="ml-3">Total Price</p>
+            <p class="mr-3">2999</p>
+        </div>
+    </section>
+
+    <section class="sticky bottom-0 w-full mt-3 rounded-2xl">
+        <button class="h-16 bg-blue-500 w-full">Checkout</button>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <script type="module" crossorigin src="/assets/main-CXxJf_eN.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/products-DgEFlEh-.js">
+  <link rel="stylesheet" crossorigin href="/assets/products-Dk_i2w_z.css">
+</head>
+
+<body class="bg-zinc-200">
+  <div class="m-1 bg-emerald-950 rounded-sm pb-2">
+
+    <nav class=" flex items-center justify-between rounded-md">
+      <a href="" class="ml-2"><i class="fa-solid fa-bars" style="color: #fafafa;"></i></a>
+      <a href="" class="mt-1">
+        <img src="/assets/logo-CFgw-GJD.png" alt="" class="w-32 ">
+      </a>
+
+      <!-- Cart -->
+      <div class="bg-black mr-1 w-14 flex justify-center items-center rounded-lg">
+        <a href="./Cartfile.html" class="mr-2 flex justify-center items-center gap-1">
+          <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+          <p id="value" class="text-cyan-50">0</p>
+        </a>
+      </div>
+    </nav>
+
+    <div class="flex mt-1 ml-2 mr-2 bg-white rounded-xl md:w-1/2 md:ml-64">
+      <input type="text" placeholder="Search for a product " class="rounded-xl bg-transparent ml-3 outline-none w-full">
+      <a href="" class="mr-3"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+  </div>
+
+  <section
+    class="bg-rose-950 rounded-sm ml-1 mr-1 text-white flex space-x-6 items-center justify-center text-sm overflow-x-auto md:space-x-32">
+    <a href="">
+      <img src="data:image/png;base64,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" alt="" class="w-10">
+      <p class="">Mobile</p>
+    </a>
+    <a href="">
+      <img src="/assets/Television-43eXfxBt.png" alt="" class="w-10 ml-2">
+      <p class="">Television</p>
+    </a>
+    <a href="">
+      <img src="data:image/png;base64,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" alt="" class="w-10 ml-7">
+      <p>Kitchen Appliances</p>
+    </a>
+    <a href="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNjJBMTI5RTA2OTlFQjExOUMzMkUxQTAxMDRBMzY0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NDIyMzZCMjk5MDcxMUVCQjE5N0RERUFFMTJCRjU3NCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NDIyMzZCMTk5MDcxMUVCQjE5N0RERUFFMTJCRjU3NCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY2MkExMjlFMDY5OUVCMTE5QzMyRTFBMDEwNEEzNjQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY2MkExMjlFMDY5OUVCMTE5QzMyRTFBMDEwNEEzNjQzIi8+IDwvcmRmOkRlc2NyaXB0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" alt="" class="w-10 ml-6">
+      <p>Air Conditioners</p>
+    </a>
+  </section>
+
+  <section class="ml-2 mr-2 mt-2 flex items-center justify-center">
+    <img src="/assets/dyson-C_tRHsDU.webp" alt="" class="h-24 w-96 md:w-2/3 md:h-36">
+  </section>
+
+
+  <div class="bg-slate-400 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Mobile</p>
+  </div>
+
+  <!-- Mobile -->
+
+  <template id="productTemp" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div id="MobileCard" class="MCard bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div id="QuantityProduct" class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="stockNo">1</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button id="addtocart" class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p>Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  <!-- Television Section -->
+
+  <div class="bg-red-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Television</p>
+  </div>
+
+
+  <template id="productTempII" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"><span>&#8377;</span></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"><span>&#8377;</span></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button id="addtocart" class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p>Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+
+  <!-- Kitchen Appliances -->
+
+  <div class="bg-blue-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Kitchen Appliances</p>
+  </div>
+
+
+  <template id="productTempIII" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p id="addtocart">Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  <!-- Air Conditioners -->
+
+  <div class="bg-blue-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Air Conditioners</p>
+  </div>
+
+
+  <template id="productTempIV" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p id="addtocart">Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  </div>
+
+</body>
+
+</html>

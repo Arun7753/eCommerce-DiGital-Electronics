@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-zinc-200">
+  <div class="m-1 bg-emerald-950 rounded-sm pb-2">
+
+    <nav class=" flex items-center justify-between rounded-md">
+      <a href="" class="ml-2"><i class="fa-solid fa-bars" style="color: #fafafa;"></i></a>
+      <a href="" class="mt-1">
+        <img src="./Icon/logo.png" alt="" class="w-32 ">
+      </a>
+
+      <!-- Cart -->
+      <div class="bg-black mr-1 w-14 flex justify-center items-center rounded-lg">
+        <a href="./Cartfile.html" class="mr-2 flex justify-center items-center gap-1">
+          <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+          <p id="value" class="text-cyan-50">0</p>
+        </a>
+      </div>
+    </nav>
+
+    <div class="flex mt-1 ml-2 mr-2 bg-white rounded-xl md:w-1/2 md:ml-64">
+      <input type="text" placeholder="Search for a product " class="rounded-xl bg-transparent ml-3 outline-none w-full">
+      <a href="" class="mr-3"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+  </div>
+
+  <section
+    class="bg-rose-950 rounded-sm ml-1 mr-1 text-white flex space-x-6 items-center justify-center text-sm overflow-x-auto md:space-x-32">
+    <a href="">
+      <img src="./Icon/Phone.png" alt="" class="w-10">
+      <p class="">Mobile</p>
+    </a>
+    <a href="">
+      <img src="./Icon/Television.png" alt="" class="w-10 ml-2">
+      <p class="">Television</p>
+    </a>
+    <a href="">
+      <img src="./Icon/Kitchen.png" alt="" class="w-10 ml-7">
+      <p>Kitchen Appliances</p>
+    </a>
+    <a href="">
+      <img src="./Icon/Air Condition.png" alt="" class="w-10 ml-6">
+      <p>Air Conditioners</p>
+    </a>
+  </section>
+
+  <section class="ml-2 mr-2 mt-2 flex items-center justify-center">
+    <img src="./Icon/dyson.webp" alt="" class="h-24 w-96 md:w-2/3 md:h-36">
+  </section>
+
+
+  <div class="bg-slate-400 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Mobile</p>
+  </div>
+
+  <!-- Mobile -->
+
+  <template id="productTemp" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div id="MobileCard" class="MCard bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div id="QuantityProduct" class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="stockNo">1</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button id="addtocart" class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p>Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  <!-- Television Section -->
+
+  <div class="bg-red-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Television</p>
+  </div>
+
+
+  <template id="productTempII" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"><span>&#8377;</span></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"><span>&#8377;</span></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button id="addtocart" class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p>Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+
+  <!-- Kitchen Appliances -->
+
+  <div class="bg-blue-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Kitchen Appliances</p>
+  </div>
+
+
+  <template id="productTempIII" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p id="addtocart">Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  <!-- Air Conditioners -->
+
+  <div class="bg-blue-300 mt-2 ml-2 mr-2 rounded-xl text-center">
+    <p class="underline font-bold" id="productCategory">Air Conditioners</p>
+  </div>
+
+
+  <template id="productTempIV" class="flex shadow-xl mt-1 ml-2 mr-2 space-x-1 overflow-x-auto">
+    <div class="bg-white rounded-md">
+      <article class="flex flex-col items-center gap-1 mt-2 p-3.5">
+
+        <div id="img-category" class="pb-1.5 sm:pb-0.5 lg:pb-1.5">
+          <img src="" alt="" class="object-scale-down h-20" id="product-IMG">
+        </div>
+
+        <div class="flex flex-col">
+
+          <h2 id="product-name" class="font-bold"></h2>
+
+          <div>
+
+          </div>
+          <div id="rating">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+
+          <p id="product-description"> </p>
+
+          <div class="flex gap-2 mt-2">
+            <p id="product-Price"></p>
+            <p>MRP</p>
+            <p id="product-MRP" class="line-through"></p>
+          </div>
+
+          <div class="flex gap-1 mt-2 text-sm">
+            <p id="">Total available stock:</p>
+            <p id="available-quantity"></p>
+          </div>
+
+          <div class="flex gap-2 mt-2">
+            <p>Quantity</p>
+            <div class="flex shadow-md bg-white">
+              <button id="decrement" class=" w-7 rounded-sm">-</button>
+              <p id="pieces">01</p>
+              <button id="increment" class=" w-7 rounded-sm">+</button>
+            </div>
+          </div>
+
+          <button class="bg-gray-700 w-24 text-center mt-2 rounded-md text-white mt-4">
+            <p id="addtocart">Add To Cart</p>
+          </button>
+        </div>
+
+      </article>
+    </div>
+
+  </template>
+
+  </div>
+
+</body>
+<script type="module" src="main.js"></script>
+
+</html>
