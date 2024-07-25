@@ -1,36 +1,56 @@
 [
     {
         "id": 1,
-        "name": "Lava 5g",
+        "name": "oppo A59 5G",
         "category": "Mobile",
-        "Price": 12999,
-        "MRP": 15999,
+        "Price": 13999,
+        "MRP": 17999,
         "stock": 12,
-        "image": "./Icon/Mobile.webp",
-        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+        "image": "./Icon/oppo-a59.png",
+        "description": "oppo A59 5G (4GB RAM, 128GB, Starry Black)"
     },
     {
         "id": 2,
-        "name": "Lava 5g",
+        "name": "OnePlus Nord CE4",
         "category": "Mobile",
-        "Price": 12999,
-        "MRP": 15999,
-        "stock": 12,
-        "image": "./Icon/Mobile.webp",
-        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+        "Price": 24999,
+        "MRP": 26999,
+        "stock": 9,
+        "image": "./Icon/Nord CE4 5G.png",
+        "description": "OnePlus Nord CE4 5G (8GB RAM, 128GB, Marble)"
     },
     {
         "id": 3,
-        "name": "Lava 5g",
+        "name": "Redmi 13 5G",
         "category": "Mobile",
-        "Price": 12999,
-        "MRP": 15999,
-        "stock": 12,
-        "image": "./Icon/Mobile.webp",
-        "description": "Lava O2 (Imperial Green, 8GB RAM, UFS 2.2 128GB Storage) |AG Glass Back|T616 Octacore Processor|18W fast charging"
+        "Price": 13999,
+        "MRP": 18999,
+        "stock": 20,
+        "image": "./Icon/Redmi 13.png",
+        "description": "Redmi 13 5G (6GB RAM, 128GB, Hawaiian Blue)"
     },
     {
         "id": 4,
+        "name": "SAMSUNG Galaxy A25 5G",
+        "category": "Mobile",
+        "Price": 13999,
+        "MRP": 18999,
+        "stock": 11,
+        "image": "./Icon/a25.png",
+        "description": "SAMSUNG Galaxy A25 5G (8GB RAM, 256GB, Yellow)"
+    },
+    {
+        "id": 5,
+        "name": "SAMSUNG Galaxy M14",
+        "category": "Mobile",
+        "Price": 8999,
+        "MRP": 12999,
+        "stock": 10,
+        "image": "./Icon/M14.png",
+        "description": "SAMSUNG Galaxy M14 (4GB RAM, 64GB, Arctic Blue)"
+    },
+    {
+        "id": 6,
         "name": "Some Television Model",
         "category": "Television",
         "Price": 24999,
@@ -40,7 +60,7 @@
         "description": "Details about the television"
     },
     {
-        "id": 5,
+        "id": 7,
         "name": "Some Television Model",
         "category": "Kitchen-Appliances",
         "Price": 24999,
@@ -50,7 +70,7 @@
         "description": "Details about the television"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Some Television Model",
         "category": "Air-Conditioners",
         "Price": 24999,
